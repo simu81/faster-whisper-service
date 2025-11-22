@@ -23,7 +23,7 @@ def verify_api_key(api_key: str = Depends(api_key_header)):
 
 # Load the model once on startup
 model = WhisperModel(
-    "medium",
+    "small",
     device="cpu",
     compute_type="int8"
 )
